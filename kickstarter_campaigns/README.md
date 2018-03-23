@@ -11,8 +11,8 @@ Use features like location, length of campaigns, ideal pledge, project categorie
 * What type of projects would be most successful at getting funded?
 * Is there an ideal month/day/time to launch a campaign?
 
-https://github.com/iamontheinet/datascience/blob/master/shelter_outcomes/notebooks/Shelter%20Animal%20Outcomes--Data%20Exploration.ipynb
+https://github.com/iamontheinet/datascience/blob/master/kickstarter_campaigns/notebooks/Kickstarter%20Campaigns%20Analysis.ipynb
 
 ### Modeling:
 
-https://github.com/iamontheinet/datascience/blob/master/shelter_outcomes/notebooks/Shelter%20Animal%20Outcomes--Modeling.ipynb 
+https://github.com/iamontheinet/datascience/blob/master/kickstarter_campaigns/notebooks/Kickstarter%20Campaigns%20Modeling.ipynb
