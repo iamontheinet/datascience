@@ -7,3 +7,7 @@ Social netoworks and media platforms are challenged with effectively facilitatin
 ### Goal:
 
 Develop a set of ML models that can accurately classify and flag/remove comments that are toxic, threating, insulting, hateful and/or obscene in nature. Thereby, enabling users to engage more openly and social media platforms to better facitilate online conversations. 
+
+### Data Exploration:
+
+https://github.com/iamontheinet/datascience/blob/master/NLP_Sentiment_Analysis/notebooks/SentimentAnalysis_EDA.ipynb
