@@ -6,10 +6,4 @@ Social networks and media platforms are challenged with effectively facilitating
 
 ### Goal:
 
-Develop a set of ML models that can accurately classify and flag/remove comments that are toxic, threatening, insulting, hateful and/or obscene in nature. Thereby, enabling users to engage more openly and social media platforms to better facilitate online conversations. 
-
-### Data Exploration:
-
-https://github.com/iamontheinet/datascience/blob/master/NLP_Sentiment_Analysis/notebooks/SentimentAnalysis_EDA.ipynb
-
-
+Develop a set of NLP models that can classify texts that are toxic, severe-toxic, threatening, insulting, hateful and/or obscene in nature.
