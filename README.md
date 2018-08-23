@@ -1,1 +1,1 @@
-My projects related to data science.
+My projects related to data science and machine learning.
