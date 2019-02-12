@@ -65,9 +65,13 @@ test.show(5)
 
 // COMMAND ----------
 
-// Create RandomForestRegressor instance with hyperparameters "number of trees" set to 30 and "tree depth" set to 2. 
+dbutils.widgets.text("NUM_OF_TREES", "30")
+var numOfTrees = dbutils.widgets.get("NUM_OF_TREES").toInt
+//println(s"numOfTrees : ${numOfTrees}")
+
+// Create RandomForestRegressor instance with hyperparameters "number of trees" set to the default value (30) or parameter passed in and "tree depth" set to 2. 
 // NOTE: Hyperparameter values are hard-coded arbitraryly for the sake of illustration. In production, hyperparameters should be tuned to create more accurate models.)
-var rf = new RandomForestRegressor().setNumTrees(30).setMaxDepth(2)
+var rf = new RandomForestRegressor().setNumTrees(numOfTrees).setMaxDepth(2)
 
 // COMMAND ----------
 
@@ -115,14 +119,14 @@ predictions.show(5)
 // COMMAND ----------
 
 // Export and save model to AWS S3
-var awsAccessKeyId = "YOUR_awsAccessKeyId"
-var awsSecretAccessKey = "YOUR_awsSecretAccessKey"
-var awsBucket = "YOUR_awsBucket"
+// var awsAccessKeyId = "YOUR_awsAccessKeyId"
+// var awsSecretAccessKey = "YOUR_awsSecretAccessKey"
+// var awsBucket = "YOUR_awsBucket"
 
-sc.hadoopConfiguration.set("fs.s3n.awsAccessKeyId", awsAccessKeyId)
-sc.hadoopConfiguration.set("fs.s3n.awsSecretAccessKey", awsSecretAccessKey)
+// sc.hadoopConfiguration.set("fs.s3n.awsAccessKeyId", awsAccessKeyId)
+// sc.hadoopConfiguration.set("fs.s3n.awsSecretAccessKey", awsSecretAccessKey)
 
-ModelExport.exportModel(model, awsBucket)
+// ModelExport.exportModel(model, awsBucket)
 
 // COMMAND ----------
 
